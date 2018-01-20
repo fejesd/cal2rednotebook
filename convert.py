@@ -53,7 +53,7 @@ def convert(fname):
 
 onlyfiles = [f for f in listdir('.') if isfile(join('.', f))]
 for f in onlyfiles:
-        if f.find('.CAL') != -1:
+        if f.upper().find('.CAL') != -1:
                 convert(f)
 print('No more cal files, exiting...')
 
